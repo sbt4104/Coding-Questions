@@ -31,7 +31,7 @@ class Solution {
 
 int main() {
     Solution obj;
-    obj.getInput("aaabd",1);
+    obj.getInput("aaab",0);
     cout<<"answer: "<<obj.longestSubstring()<<endl;
     return 0;
 }
