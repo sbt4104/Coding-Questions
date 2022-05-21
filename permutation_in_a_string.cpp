@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution{
+    private:
+        string inputStr="", searchStr="";
+        int inputLen=0, searchLen=0;
+        unordered_map<char, int> mainMap;
+    public:
+        Solution(string str1, string str2): inputStr(str1), searchStr(str2) {
+            inputLen = inputStr.length();
+            searchLen = searchStr.length();
+        }
+        void setMainMap();
+        string isPresent();
+};
+
+void Solution::setMainMap() {
+    for(int index=0; index<searchLen; index++) {
+        mainMap[searchStr[index]]++;
+    }
+}
+
+string Solution::isPresent() {
+    setMainMap();
+    int start=0, similarity=0;
+    unordered_map<char, int> windowMap;
+    for(int end=0; end<inputLen; end++) {
+        int currCount = ++windowMap[inputStr[end]];
+        int mainCount = mainMap[inputStr[end]];
+        if(mainCount >= currCount) {
+            // if similar characters are popping up increase similarity and keep looking
+            similarity++;
+        } else {
+            // reset similarity
+            similarity=0;
+        }
+
+        if(similarity == searchLen) {
+            return "yes";
+        }
+
+        if(end-start+1 == searchLen) {
+            windowMap[inputStr[start]]--;
+            start++;
+        }
+    }
+
+    return "no";
+}
+
+int main() {
+    Solution obj("bbbdbb", "bbbb");
+    cout<<"ans: "<<obj.isPresent()<<endl;
+    return 0;
+}
