@@ -24,6 +24,7 @@ void Solution::setMainMap() {
 string Solution::isPresent() {
     setMainMap();
     int start=0, similarity=0;
+    vector<int> answer;
     for(int end=0; end<inputLen; end++) {
         char curr=inputStr[end];
         if(mainMap.find(curr) != mainMap.end()) {
@@ -35,7 +36,7 @@ string Solution::isPresent() {
         }
 
         if(similarity == searchLen) {
-            return "yes";
+            answer.push_back(start);
         }
 
         if(end-start+1 >= searchLen) {
@@ -49,8 +50,11 @@ string Solution::isPresent() {
             start++;
         }
     }
-
-    return "no";
+    for(int index=0; index<answer.size(); index++) {
+        cout<<answer[index]<<" ";
+    }
+    cout<<endl;
+    return answer.size() ? "yes" : "no";
 }
 
 int main() {
