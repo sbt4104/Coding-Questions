@@ -28,7 +28,7 @@ int Solution::getSmallestStr() {
         char curr = inputStr[end];
         if(mainMap.find(curr) != mainMap.end()) {
             mainMap[curr]--;
-            if(mainMap[curr] == 0) {
+            if(mainMap[curr] >= 0) {
                 similarity++;
             }
         }
@@ -56,7 +56,7 @@ int Solution::getSmallestStr() {
 }
 
 int main() {
-    Solution obj("adcad", "abc");
+    Solution obj("abdcaaa", "abc");
     cout<<"answer: "<<obj.getSmallestStr()<<endl;
     return 0;
 }
