@@ -54,7 +54,7 @@ string Solution::isPresent() {
 }
 
 int main() {
-    Solution obj("abbcabc","abc");
+    Solution obj("bac","abc");
     cout<<"ans: "<<obj.isPresent()<<endl;
     return 0;
 }

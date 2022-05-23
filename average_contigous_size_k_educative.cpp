@@ -1,3 +1,6 @@
+/*
+Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
+*/
 #include<bits/stdc++.h>
 
 using namespace std;

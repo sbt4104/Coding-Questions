@@ -1,3 +1,6 @@
+/*
+Given an array containing 0s and 1s, if you are allowed to replace no more than ‘k’ 0s with 1s, find the length of the longest contiguous subarray having all 1s.
+*/
 // replace only zeroes with 1 and then calculate the maxcount
 #include<bits/stdc++.h>
 using namespace std;
