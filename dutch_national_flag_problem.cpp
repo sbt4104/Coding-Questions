@@ -1,3 +1,6 @@
+/*
+Given an array containing 0s, 1s and 2s, sort the array in-place. You should treat numbers of the array as objects, hence, we can’t count 0s, 1s, and 2s to recreate the array.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
