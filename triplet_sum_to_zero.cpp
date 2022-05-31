@@ -33,12 +33,9 @@ class Solution {
 void Solution::pairSum(int giveSum, int index) {
     int left=index;
     int right=len-1;
-    cout<<"left: "<<left<<"right: "<<right<<endl;
     while(left<right) {
-        int currSum = input[left]+input[right]; 
-        cout<<"currSum "<<currSum<<endl;
+        int currSum = input[left]+input[right];
         if(currSum == giveSum) {
-            cout<<"in here\n";
             Triplets trip(-giveSum, input[left], input[right]);
             ans.push_back(trip);
             left++;
@@ -54,10 +51,9 @@ void Solution::getTriplets() {
     sort(input.begin(), input.end());
     for(int index=0; index<len-2; index++) {
         int searchSum = -input[index];
-        cout<<"searchSum: "<<searchSum<<endl;
         pairSum(searchSum, index+1);
     }
-    cout<<"size: "<<ans.size()<<endl;
+
     for(int index=0; index<ans.size(); index++) {
         ans[index].show();
     }
