@@ -16,21 +16,28 @@ class ListNode{
 
 class LinkedListCycle{
     public:
-        bool hasCycle(ListNode *head);
+        static bool hasCycle(ListNode *head);
 };
 
-bool LinkedListCycle::hasCycle(ListNode *head) {
+ bool LinkedListCycle::hasCycle(ListNode *head) {
     ListNode *slow = head, *fast = head;
     while(fast!=nullptr && fast->next != nullptr) {
         fast = fast->next->next;
         slow = slow->next;
         if(fast == slow) {
-            return 0;
+            return true;
         }
     }
     return false;
 }
 
 int main() {
+    ListNode *head = new ListNode(10);
+    head->next = new ListNode(20);
+    head->next->next = new ListNode(30);
+    head->next->next->next = new ListNode(40);
+    head->next->next->next->next = new ListNode(50);
+    head->next->next->next->next->next = head->next->next;
+    cout<<"ans: "<<LinkedListCycle::hasCycle(head)<<endl;
     return 0;
 }
