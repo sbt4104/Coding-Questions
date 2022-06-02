@@ -31,8 +31,8 @@ int main() {
     head->next = new ListNode(20);
     head->next->next = new ListNode(30);
     head->next->next->next = new ListNode(40);
-    head->next->next->next->next = new ListNode(50);
-    head->next->next->next->next->next = new ListNode(60);
+    //#head->next->next->next->next = new ListNode(50);
+    //head->next->next->next->next->next = new ListNode(60);
     cout<<"ans: "<<LinkedListMiddle::getMiddle(head)->data<<endl;
     return 0;
 }
