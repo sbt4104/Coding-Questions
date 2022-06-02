@@ -29,7 +29,7 @@ bool CircularArray::isCycle() {
         if(visited[index]) continue;
         int slow=index, fast=index, cyc=1, nextIndex;
 
-        while(cyc) {
+        do {
             // if direction of cycle changes, then break;
            if(input[index]*input[slow] < 0 || input[index]*input[fast] < 0) {break;}
             visited[slow] = visited[fast]=1;
@@ -37,11 +37,12 @@ bool CircularArray::isCycle() {
             fast=nextMove(nextMove(fast));
 
             if(slow == -1) {break;}
-            if(slow==fast) {
-                //cycle found
-                cout<<"cycle found at index: "<<index<<endl;
-                return true;
-            }
+        }while(slow!=fast);
+
+        if(slow==fast) {
+            //cycle found
+            cout<<"cycle found at index: "<<index<<endl;
+            return true;
         }
     }
     cout<<"cycle not found\n";
