@@ -9,6 +9,8 @@ Coding-Questions
 Problem Statements
 ------------------
 
+Each file conatins the problem statements on top of the page.
+
 - average_contigous_size_k.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/average_contigous_size_k.cpp
 - average_contigous_size_k_educative.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/average_contigous_size_k_educative.cpp
 - compairing_strings_containing_backspaces.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/compairing_strings_containing_backspaces.cpp
