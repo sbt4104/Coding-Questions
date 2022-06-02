@@ -17,13 +17,7 @@ class CircularArray{
 };
 
 int CircularArray::nextMove(int curr) {
-    int nextMove;
-    if(curr + input[curr] < len) {
-        nextMove=curr+input[curr];
-    } else {
-        nextMove = curr+input[curr]-len;
-        nextMove %=len;
-    }
+    int nextMove = (curr + input[curr] + len)%len;
     return curr==nextMove ? -1: nextMove;
 }
 
@@ -55,7 +49,7 @@ bool CircularArray::isCycle() {
 }
 
 int main() {
-    CircularArray obj({2, 1, -1, -2});
+    CircularArray obj({2, 2, -1, 2});
     obj.isCycle();
     return 0;
 }
