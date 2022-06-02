@@ -40,4 +40,5 @@ Problem Statements
 - start_of_linkedlist_cycle.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/start_of_linkedlist_cycle.cpp
 - happy_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/happy_number.cpp
 - middle_of_the_linked_list.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/middle_of_the_linked_list.cpp
-- palindrome_linkedlist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/palindrome_linkedlist.cpp 
+- palindrome_linkedlist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/palindrome_linkedlist.cpp
+- rearrange_a_linkedlist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/rearrange_a_linkedlist.cpp
