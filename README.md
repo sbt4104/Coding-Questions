@@ -46,3 +46,4 @@ Each file conatins the problem statements on top of the page.
 - rearrange_a_linkedlist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/rearrange_a_linkedlist.cpp
 - cycle_in_circular_array.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/cycle_in_circular_array.cpp 
 - merge_intervals.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/merge_intervals.cpp 
+- insert_interval.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/insert_interval.cpp 
