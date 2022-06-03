@@ -17,26 +17,32 @@ class InsertIntervalClass{
 };
 
 vector<Interval>  InsertIntervalClass::insertInterval(vector<Interval> input , Interval interval) {
-    int len=input.size();
+    int len=input.size(), index=0;
     vector<Interval> ans;
-    int start=interval.start, end=interval.end, flag=0;
-    for(int index=0; index<len; index++) {
-        if(!(start > input[index].end || end < input[index].start)) {
-            //overlap found
-            start = min(start, input[index].start);
-            end = max(end, input[index].end);
-            flag=1;
-        } else {
-            flag ? ans.push_back(Interval(start, end)) :  ans.push_back(input[index]);
-            flag=0;
-        }
+    int start=interval.start, end=interval.end;
+    // skip all the intervals which are less than given interval
+    while(start > input[index].end) {
+        ans.push_back(input[index]);
+        index++;
     }
-    flag ? ans.push_back(Interval(start, end)) :  ans.push_back(input[len-1]);
+
+    while(index<len && end >= input[index].start) {
+        start = min(start, input[index].start);
+        end = max(end, input[index].end);
+        index++;
+    }
+
+    ans.push_back({start, end});
+
+    while(index<len) {
+        ans.push_back(input[index]);
+        index++;
+    }
     return ans;
 }
 
 int main() {
-    vector<Interval> ans = InsertIntervalClass::insertInterval({{2,3}, {5,7}}, {1,4});
+    vector<Interval> ans = InsertIntervalClass::insertInterval({{1,3}, {5,7}, {8,12}}, {4,10});
     for(int index=0; index<ans.size(); index++) {
         ans[index].showInterval();
     }
