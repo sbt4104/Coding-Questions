@@ -48,3 +48,4 @@ Each file conatins the problem statements on top of the page.
 - merge_intervals.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/merge_intervals.cpp 
 - insert_interval.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/insert_interval.cpp 
 - intervals_interdection.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/intervals_interdection.cpp 
+- conflicting_appointments.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/conflicting_appointments.cpp
