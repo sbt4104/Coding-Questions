@@ -49,3 +49,4 @@ Each file conatins the problem statements on top of the page.
 - insert_interval.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/insert_interval.cpp 
 - intervals_interdection.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/intervals_interdection.cpp 
 - conflicting_appointments.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/conflicting_appointments.cpp
+- minimum_meeting_rooms.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/minimum_meeting_rooms.cpp
