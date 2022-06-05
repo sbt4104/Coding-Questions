@@ -50,3 +50,4 @@ Each file conatins the problem statements on top of the page.
 - intervals_interdection.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/intervals_interdection.cpp 
 - conflicting_appointments.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/conflicting_appointments.cpp
 - minimum_meeting_rooms.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/minimum_meeting_rooms.cpp
+- maximum_cpu_load.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/maximum_cpu_load.cpp
