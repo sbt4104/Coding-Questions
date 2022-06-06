@@ -39,6 +39,7 @@ void Solution::pairSum(int giveSum, int index) {
             Triplets trip(-giveSum, input[left], input[right]);
             ans.push_back(trip);
             left++;
+            right--;
         } else if (currSum < giveSum) {
             left++;
         } else {
@@ -65,3 +66,48 @@ int main() {
     obj.getTriplets();
     return 0;
 }
+
+/*
+    
+class Solution {
+//This snippet takes care of cases where releated triplets are not allowed (follows the same pattern as given in leetcode)
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());    
+        vector<vector<int>> triplets;
+        for(int index=0; index<(int)nums.size()-2; index++) {
+            if(index>0 && nums[index]==nums[index-1]) {continue;}
+            vector<vector<int>> curr = getTriplets(-nums[index], index+1, nums);
+            triplets.insert(triplets.end(), curr.begin(), curr.end()); 
+        }
+
+        return triplets;
+    }
+
+    vector<vector<int>>  getTriplets(int sum,int index, vector<int> &nums) {
+        int start=index, end=nums.size()-1;
+        vector<vector<int>> triplets;
+        while(start<end) {
+            int currSum = nums[start]+nums[end]; 
+
+            if(currSum == sum) {
+                vector<int> currTriplet{-sum, nums[start], nums[end]};
+                triplets.push_back(currTriplet);
+                start++;
+                end--;
+                while(start<end && nums[start]==nums[start-1]) {
+                    start++;
+                }
+                while(start<end && nums[end]==nums[end+1]) {
+                    end--;
+                }
+            } else if(currSum < sum) {
+                start++;
+            } else {
+                end--;
+            }
+        }
+        return triplets;
+    }
+};
+*/
