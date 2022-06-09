@@ -57,3 +57,5 @@ Each file conatins the problem statements on top of the page.
 - cyclic_sort.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/cyclic_sort.cpp
 - find_the_missing_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_the_missing_number.cpp
 - find_all_missing_numbers.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_all_missing_numbers.cpp
+- find_all_the_duplicate_numbers.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_all_the_duplicate_numbers.cpp
+- find_the_duplicate_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_the_duplicate_number.cpp
