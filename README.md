@@ -60,3 +60,4 @@ Each file conatins the problem statements on top of the page.
 - find_all_the_duplicate_numbers.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_all_the_duplicate_numbers.cpp
 - find_the_duplicate_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_the_duplicate_number.cpp
 - find_the_corrupt_pair.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/find_the_corrupt_pair.cpp
+- smallest_missing_positive_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/smallest_missing_positive_number.cpp
