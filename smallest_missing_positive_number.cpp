@@ -15,7 +15,7 @@ class MissingNumbers{
 };
 
 int MissingNumbers::smallestMissingPos(vector<int> &vec) {
-    int index=0, ans=-1;
+    int index=0, ans=vec.size()+1;
     while(index < vec.size()) {
         int indexJ=vec[index]-1;
         if(vec[index]>0 && vec[index]<vec.size()+1 && vec[index]!=vec[indexJ]) {
