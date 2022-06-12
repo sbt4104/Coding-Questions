@@ -63,3 +63,4 @@ Each file conatins the problem statements on top of the page.
 - smallest_missing_positive_number.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/smallest_missing_positive_number.cpp
 - first_k_missing_positive_numbers.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/first_k_missing_positive_numbers.cpp
 - reverse_a_linked_list.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_a_linked_list.cpp
+- reverse_a_sublist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_a_sublist.cpp
