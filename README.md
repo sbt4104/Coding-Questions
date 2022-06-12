@@ -65,3 +65,4 @@ Each file conatins the problem statements on top of the page.
 - reverse_a_linked_list.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_a_linked_list.cpp
 - reverse_a_sublist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_a_sublist.cpp
 - reverse_every_k_element_sublist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_every_k_element_sublist.cpp
+- reverse_alternating_k_sublist.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/reverse_alternating_k_sublist.cpp
