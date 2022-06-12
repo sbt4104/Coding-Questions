@@ -45,9 +45,15 @@ ListNode* LinkedList::reverseSubList(ListNode *head, int p, int q) {
         curr=next;
         index++;
     }
-    if(newLast!=nullptr) {newLast->next=prev;}
+
+    //join this sublist to the main list
+    if(newLast!=nullptr) {
+        newLast->next=prev;
+    } else {
+        head=prev;
+    }
     newFirst->next=curr;
-    return p==1? prev : head;
+    return head;
 }
 
 int main() {
