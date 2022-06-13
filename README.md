@@ -1,15 +1,7 @@
 Coding-Questions
 ==================
 
-- Run these c++ programs as usual using a compiler
-- If you are using a linux, use g++
-    - g++ <file_name> -o output
-    - ./output
-
-Problem Statements
-------------------
-
-Each file conatins the problem statements on top of the page.
+Each file conatins the problem statement on top of the page.
 
 - average_contigous_size_k.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/average_contigous_size_k.cpp
 - average_contigous_size_k_educative.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/average_contigous_size_k_educative.cpp
