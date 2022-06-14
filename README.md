@@ -62,3 +62,4 @@ Each file conatins the problem statement on top of the page.
 - binary_tree_level_order_traversal.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/binary_tree_level_order_traversal.cpp
 - binary_tree_reverse_level_order.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/binary_tree_reverse_level_order.cpp
 - binary_tree_zigzag_traversal.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/binary_tree_zigzag_traversal.cpp
+- level_averages_in_binary_tree.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/level_averages_in_binary_tree.cpp
