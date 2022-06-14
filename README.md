@@ -68,3 +68,4 @@ Each file conatins the problem statement on top of the page.
 - connect_level_order_nodes.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_level_order_nodes.cpp
 - connect_all_level_siblings.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_all_level_siblings.cpp
 - right_view_binary_tree.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/right_view_binary_tree.cpp
+- binary_tree_path_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/binary_tree_path_sum.cpp
