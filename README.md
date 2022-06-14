@@ -67,3 +67,4 @@ Each file conatins the problem statement on top of the page.
 - level_order_successor.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/level_order_successor.cpp
 - connect_level_order_nodes.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_level_order_nodes.cpp
 - connect_all_level_siblings.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_all_level_siblings.cpp
+- right_view_binary_tree.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/right_view_binary_tree.cpp
