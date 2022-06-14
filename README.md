@@ -65,4 +65,5 @@ Each file conatins the problem statement on top of the page.
 - level_averages_in_binary_tree.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/level_averages_in_binary_tree.cpp
 - min_depth_binary_tree.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/min_depth_binary_tree.cpp
 - level_order_successor.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/level_order_successor.cpp
-- convert_level_order_nodes.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/convert_level_order_nodes.cpp
+- connect_level_order_nodes.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_level_order_nodes.cpp
+- connect_all_level_siblings.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/connect_all_level_siblings.cpp
