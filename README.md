@@ -74,3 +74,4 @@ Each file conatins the problem statement on top of the page.
 - path_with_given_sequencec.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/path_with_given_sequencec.cpp
 - count_paths_for_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/count_paths_for_sum.cpp
 - tree_diameter.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/tree_diameter.cpp
+- path_with_maximum_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/path_with_maximum_sum.cpp
