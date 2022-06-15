@@ -71,3 +71,4 @@ Each file conatins the problem statement on top of the page.
 - binary_tree_path_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/binary_tree_path_sum.cpp
 - all_paths_for_a_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/all_paths_for_a_sum.cpp
 - sum_of_path_numbers.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/sum_of_path_numbers.cpp
+- path_with_given_sequencec.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/path_with_given_sequencec.cpp
