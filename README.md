@@ -75,3 +75,4 @@ Each file conatins the problem statement on top of the page.
 - count_paths_for_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/count_paths_for_sum.cpp
 - tree_diameter.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/tree_diameter.cpp
 - path_with_maximum_sum.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/path_with_maximum_sum.cpp
+- median_of_a_number_stream.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/median_of_a_number_stream.cpp
