@@ -8,15 +8,48 @@ using namespace std;
 
 class MaximiseCapital{
     public:
-    int maximiseCapital(vector<int> &capitals, vector<int> &profits, int initialCapital, int numProjects) {
-        int maxCapital=0;
-        return maxCapital;
+    struct compareCapitals {
+        bool operator()(pair<int, int> &x, pair<int, int> &y) {return x.first > y.first;};
+    };
+    struct compareProfits {
+        bool operator()(pair<int, int> &x, pair<int, int> &y) {return y.first > x.first;};
+    };
+
+    int maximiseCapital(vector<int> capitals, vector<int> profits, int initialCapital, int numProjects) {
+        int currCapital=initialCapital;
+
+        // need to fetch capital with minimum value, use min heap
+        priority_queue<pair<int,int>, vector<pair<int,int>>, compareCapitals> capitalHeap;
+
+        // need to fetch profits with maximum value, use max heap
+        priority_queue<pair<int,int>, vector<pair<int,int>>, compareProfits> profitHeap;
+
+        // push capitals to capitalHeap
+        for(int index=0; index<profits.size(); index++) {
+            capitalHeap.push(make_pair(capitals[index], index));
+        }
+
+        // lets finish the required projects
+        for(int index=0; index<numProjects; index++) {
+            while(!capitalHeap.empty() && currCapital >= capitalHeap.top().first) {
+                int currIndex=capitalHeap.top().second;
+                profitHeap.push(make_pair(profits[currIndex], currIndex));
+                capitalHeap.pop();
+            }
+
+            if(profitHeap.empty()) {
+                break;
+            }
+            currCapital += profitHeap.top().first;
+            profitHeap.pop();
+        }
+
+        return currCapital;
     }
 };
 
 int main() {
     MaximiseCapital obj;
-    obj.maxCapital({0,1,2}, {1,2,3}, 1, 2);
-    // work on the solution
+    cout<<"ans: "<<obj.maximiseCapital({0,1,2,3}, {1,2,3,5}, 0, 3)<<endl;
     return 0;
 }
