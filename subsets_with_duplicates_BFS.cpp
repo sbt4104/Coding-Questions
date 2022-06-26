@@ -15,7 +15,7 @@ class Subusets{
         for(int indexI=0; indexI<input.size(); indexI++) {
             startIndex=0;
             if(indexI > 0 && input[indexI] == input[indexI-1]) {
-                startIndex=endIndex+1;
+                startIndex=endIndex;
             }
             endIndex=ans.size();
             for(int indexJ=startIndex; indexJ<endIndex; indexJ++) {
