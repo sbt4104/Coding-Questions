@@ -81,3 +81,4 @@ Each file conatins the problem statement on top of the page.
 - next_interval.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/next_interval.cpp
 - subsets_BFS.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/subsets_BFS.cpp
 - subsets_with_duplicates_BFS.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/subsets_with_duplicates_BFS.cpp
+- permutations_BFS.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/permutations_BFS.cpp
