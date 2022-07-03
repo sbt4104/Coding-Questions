@@ -85,3 +85,4 @@ Each file conatins the problem statement on top of the page.
 - permutations_BFS_queue.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/permutations_BFS_queue.cpp
 - string_permutation_changing_case.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/string_permutation_changing_case.cpp
 - string_permutation_changing_case_queue.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/string_permutation_changing_case_queue.cpp
+- balanced_parenthesis.cpp: https://github.com/sbt4104/Coding-Questions/blob/main/balanced_parenthesis.cpp
