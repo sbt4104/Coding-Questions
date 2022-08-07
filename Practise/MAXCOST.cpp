@@ -4,6 +4,7 @@ typedef long long int ll;
 
 ll dp[2001][2001];
 const ll INF=1e12;
+
 /*
     dp[i][j] denotes the maximum profit that can be achieved from index [i,j] (i<=j)
     dp[i][j] = max(rem*vec[i] + dp[i+1][j], rem*vec[j] + dp[i][j-1]);
@@ -38,20 +39,12 @@ int main() {
         dp[i][i] = n*vec[i];
     }
 
-
     for(ll i=n-1; i>=0; i--) {
         for(ll j=i+1; j<n; j++) {
             ll rem = n-(j-i);
             dp[i][j] = max(rem*vec[i] + dp[i+1][j], rem*vec[j] + dp[i][j-1]);
         }
     }
-
-    // for(ll i=0; i<n; i++) {
-    //     for(ll j=i; j<n; j++) {
-    //         cout<<dp[i][j]<<" "; 
-    //     }
-    //     cout<<endl;
-    // }
 
     cout<<dp[0][n-1]<<endl;
     return 0;
