@@ -12,8 +12,12 @@ dp[i] = max sum of value for given weight i
 
 dp[i] => dp[i-weight[j]] + values[i];
 
-dp[w] = dp[0-w[0]] + v[0]
-dp[w] = dp[0-w[0]] + v[0]
+dp[W] = dp[W-w[0]] + v[0]
+dp[W-1] = dp[W-1-w[0]] + v[0]
+dp[W-2] = dp[W-2-w[0]] + v[0]
+dp[W-3] = dp[W-3-w[0]] + v[0]
+
+doesnt have a specific order, can do it in any order (0->n OR N->0) order of weights matter, weight w depends on weight less than it, eventually converges
 */
 
 int main() {
@@ -27,8 +31,8 @@ int main() {
     dp[0]=0;
     for(ll i=0; i<n; i++) {
         for(ll j=w; j>=0; j--) {
-            if(j-weight[i] < 0) {continue;}
-            dp[j] = max(dp[j-weight[i]] + values[i], dp[j]);
+            if(j+weight[i] > w) {continue;}
+            dp[j+weight[i]] = max(dp[j+weight[i]], dp[j]+ values[i]);
         }
     }
 
