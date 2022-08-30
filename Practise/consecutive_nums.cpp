@@ -21,9 +21,7 @@ int main() {
             } else {
                 consecutive=1;
             }
-            cout<<consecutive<<endl;
             if((j==(curr.size()-1) && consecutive==i) || (curr[j]!=(curr[j-1]+1) && prevCons==i)) {
-                cout<<"in\n";
                 value++;
             }
         }
