@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    vector<int> input={3,3,2,2,5,5,5,5,5,3,3,3,2,2};
+    vector<int> input={2,2,1,2,2,1,1,2,2,1,2,2};
     int value=0;
     vector<vector<int>> vec(16);
 
@@ -21,8 +21,11 @@ int main() {
             } else {
                 consecutive=1;
             }
+
             if((j==(curr.size()-1) && consecutive==i) || (curr[j]!=(curr[j-1]+1) && prevCons==i)) {
+                cout<<"in\n";
                 value++;
+                if(i==1 && j==(curr.size()-1) && curr[j]!=(curr[j-1]+1)) {value++;}
             }
         }
     }
